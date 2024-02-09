@@ -1,0 +1,22 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Dew of your Youth'
+theme = 'bento'
+summaryLength = 20
+[menus]
+[[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+[[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+[[menus.main]]
+    name = 'Categories'
+    pageRef = '/categories'
+    weight = 30
+[[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 40
