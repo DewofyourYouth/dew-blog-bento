@@ -191,8 +191,8 @@ a {
   color: var(--splash-dark-color);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--text-color);
-  font-size: 3.2em;
-  font-family: merriweather-bold, Georgia, "Times New Roman", Times, serif;
+  font-size: 4em;
+  font-family: fugaz, Georgia, "Times New Roman", Times, serif;
 }
 
 .bento-main p:last-of-type {
@@ -216,7 +216,7 @@ body {
 }
 
 .bento-recent h2 {
-  font-family: merrisman-ba, Georgia, "Times New Roman", Times, serif;
+  font-family: fugaz, Georgia, "Times New Roman", Times, serif;
   color: antiquewhite;
 }
 
