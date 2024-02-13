@@ -203,7 +203,8 @@ body {
   font-size: 2em;
 }
 
-.bento-about {
+.bento-about,
+.tags {
   li::before {
     content: "🏷️ ";
   }
@@ -214,6 +215,7 @@ body {
   }
 }
 
+.categories,
 .bento-categories {
   li::before {
     content: "🔥";
@@ -275,4 +277,78 @@ body {
   background-color: $splash-dark-color;
   grid-column: 6;
   grid-row: 2;
+}
+
+.card {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  background-color: $muted-dark-color;
+  margin: 0.4em 0;
+  h3 {
+    color: $text-color;
+  }
+  a {
+    color: $primary-color;
+    &:hover,
+    &:visited:hover {
+      color: $hover-color;
+    }
+    &:visited {
+      color: $visited-link-color;
+    }
+  }
+}
+
+.card:nth-child(even) {
+  background-color: $splash-color;
+  a {
+    color: $secondary-color;
+    &:visited {
+      color: $visited-link-color;
+    }
+    &:hover,
+    &:visited:hover {
+      color: $danger-color;
+    }
+  }
+  h3 {
+    color: $default-color;
+  }
+}
+
+h2.list-title {
+  font-family: fugaz;
+}
+
+.post-info {
+  flex: 1;
+  padding: 1em;
+}
+
+.featured-image-post {
+  display: flex;
+  flex-direction: row;
+
+  .post-image {
+    border: 5px solid $primary-color;
+  }
+}
+
+.featured-image-post:nth-of-type(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.post-meta {
+  h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  ul {
+    margin: 0;
+    padding-left: 1em;
+  }
+  li {
+    display: inline-block;
+  }
 }

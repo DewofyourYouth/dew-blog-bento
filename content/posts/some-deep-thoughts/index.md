@@ -4,6 +4,7 @@ date = 2024-02-09T15:12:12+02:00
 draft = false
 tags = ['lorem', 'ipsem', 'deep']
 categories = ['ponderings', 'nonsense']
+featuredImage = "deep.jpg"
 +++
 
 Exercitation in exercitation nisi minim et nostrud sint magna ex adipisicing. Sint aliqua Lorem cillum ullamco anim magna sunt amet aliqua amet. Tempor deserunt quis anim consequat incididunt. Cupidatat est excepteur reprehenderit velit labore deserunt. Deserunt non eiusmod non elit. Consectetur ea sit officia ad esse aliquip consectetur sit non sit ad.
