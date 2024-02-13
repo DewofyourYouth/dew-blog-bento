@@ -1,25 +1,41 @@
 {{ define "main" }}
-<div class="container">
-  <section class="bento-main">{{ .Content }}</section>
-  {{$posts := where site.RegularPages "Type" "posts"}} {{ range $k, $v := $posts
-  | first 3}}
-  <section class="bento-recent bento-recent-post-{{ $k }}">
-    <div>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      <small>From {{ .PublishDate.Format "Jan 01, 2006" }}</small>
-      <p>{{ .Summary }}..</p>
+  <div class="container">
+    <section class="bento-main">{{ .Content }}</section>
+    {{ $posts := where site.RegularPages "Type" "posts" }}
+    {{ range $k, $v := $posts
+      | first 3
+    }}
+      <section class="bento-recent bento-recent-post-{{ $k }}">
+        <div>
+          <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          <small>From {{ .PublishDate.Format "Jan 01, 2006" }}</small>
+          <p>{{ .Summary }}..</p>
+        </div>
+      </section>
+    {{ end }}
+    <div class="bento-recent bento-about">
+      <h2><a href="/about">About</a></h2>
+      <p>Read more about <a href="/about">Dew of your Youth</a></p>
+      <h2><a href="/posts">Posts</a></h2>
+      <p>See all the <a href="/posts">posts here</a></p>
+      <h2>Tags:</h2>
+      {{ $tags := $.Site.Taxonomies.tags.ByCount }}
+      <ul>
+        {{ range $tags }}
+          <li><a href="/tags/{{ .Name }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
     </div>
-  </section>
-  {{end}}
-  <div class="bento-recent bento-about">
-    <h2><a href="/about">About</a></h2>
+    <div class="bento-recent bento-categories">
+      <h2>Categories:</h2>
+      {{ $categories := $.Site.Taxonomies.categories.ByCount }}
+      <ul>
+        {{ range $categories }}
+          <li>
+            <a href="/categories/{{ .Name }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
   </div>
-  <div class="bento-recent bento-categories">
-    <h2>Categories:</h2>
-    <ul>
-      <li>Category One</li>
-      <li>Category Two</li>
-    </ul>
-  </div>
-</div>
 {{ end }}

@@ -1,0 +1,27 @@
+{
+  "name": "dew-blog-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DewofyourYouth/dew-blog-bento.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DewofyourYouth/dew-blog-bento/issues"
+  },
+  "homepage": "https://github.com/DewofyourYouth/dew-blog-bento#readme",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-go-template": "^0.0.15"
+  },
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}
