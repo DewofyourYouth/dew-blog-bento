@@ -1,5 +1,4 @@
 <div class="top-nav-banner">
   <h1>{{ site.Title }}</h1>
-  {{if not .IsHome}} {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-  {{end}}
+  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </div>
