@@ -12,7 +12,7 @@
     {{ $categories := .Params.categories }}
     <ul class="categories">
       {{ range $categories }}
-        <li><a href="/categories/{{ . }}">{{ . }}</a></li>
+        <li><a href="./categories/{{ . }}">{{ . }}</a></li>
       {{ end }}
     </ul>
   {{ end }}
@@ -21,7 +21,7 @@
     {{ $tags := .Params.tags }}
     <ul class="tags">
       {{ range $tags }}
-        <li><a href="/tags/{{ . }}">{{ . }}</a></li>
+        <li><a href="./tags/{{ . }}">{{ . }}</a></li>
       {{ end }}
     </ul>
   {{ end }}
