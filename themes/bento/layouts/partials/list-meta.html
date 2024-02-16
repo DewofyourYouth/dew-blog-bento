@@ -1,0 +1,24 @@
+<div class="post-meta">
+  <p>
+    <small>{{ .Date | time.Format ":date_medium" }}</small>
+  </p>
+  <p>{{ .Summary }}..</p>
+  {{ if .Params.categories }}
+    <h3>Categories:</h3>
+    {{ $categories := .Params.categories }}
+    <ul class="categories">
+      {{ range $categories }}
+        <li><a href="/categories/{{ . }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  {{ if .Params.tags }}
+    <h3>Tags:</h3>
+    {{ $tags := .Params.tags }}
+    <ul class="tags">
+      {{ range $tags }}
+        <li><a href="/tags/{{ . }}">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</div>

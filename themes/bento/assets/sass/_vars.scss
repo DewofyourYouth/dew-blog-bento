@@ -14,3 +14,13 @@ $text-color: #333333;
 $background-color: #f2f2f2;
 $visited-link-color: #9b59b6;
 $hover-color: #2980b9;
+
+@font-face {
+  font-family: "open-sans";
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "fugaz";
+  src: url("../fonts/FugazOne-Regular.ttf") format("truetype");
+}
