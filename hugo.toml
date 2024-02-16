@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Dew of your Youth'
 theme = 'bento'
-summaryLength = 20
+summaryLength = 30
 [menus]
 [[menus.main]]
     name = 'Home'
