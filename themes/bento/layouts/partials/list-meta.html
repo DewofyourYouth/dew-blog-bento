@@ -5,6 +5,7 @@
   <p>
     <small>{{ .Date | time.Format ":date_medium" }}</small>
   </p>
+  <p class="description">{{ .Description }}</p>
   <p>{{ .Summary }}..</p>
   {{ if .Params.categories }}
     <h3>Categories:</h3>
